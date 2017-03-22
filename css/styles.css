@@ -5,7 +5,8 @@ h1{
 
 h2{
     flex-wrap: wrap;
-    background-color: beige;
+    background-color: brown;
+    text-align: center;
 }
 
 h3{
@@ -97,4 +98,64 @@ input[type="submit"]:hover {
 
 input[type="submit"]:active {
   background: #333;
+}
+
+/* Card with Thumb, Title, Description */
+figure{
+  background: green;
+  margin: 7px;
+  width: 12em;
+  display: inline-block
+}
+
+/* Fullsize Overlay/Lightbox/Modal */
+/* Hide it */
+.overlay{  
+  display: none;
+
+
+/* Overlay Styling */
+background: rgba(855,200,10,.25);
+  
+position: absolute;
+height: 100%;
+width: 100%;  
+top:0;
+left:0;
+
+}
+
+/* Show it */
+.overlay:target {
+  display: block;
+
+/* Contents of Overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  min-height: 50vh;
+  
+/*  Animation  */
+  animation: fadeish 1s;
+  
+}
+
+/* EXTRA STYLING */
+.overlay img {
+  border: 10px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #333;
+}
+
+@keyframes fadeish {
+  0% { 
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
 }
