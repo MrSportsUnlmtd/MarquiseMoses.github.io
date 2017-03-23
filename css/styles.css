@@ -1,3 +1,9 @@
+p{
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
 h1{
     text-align: center;
     background-color: coral;
@@ -11,7 +17,7 @@ h2{
 
 h3{
     text-align: left;
-    height: 25px;
+    flex-wrap: wrap; 
 }
 
 body{
@@ -102,8 +108,9 @@ input[type="submit"]:active {
 
 /* Card with Thumb, Title, Description */
 figure{
-  background: green;
-  margin: 7px;
+  background-color: brown;
+  margin: 10;
+  padding: 1em;
   width: 12em;
   display: inline-block;
 }
@@ -122,13 +129,12 @@ height: 100%;
 width: 100%;  
 top:0;
 left:0;
-
 }
 
 /* Show it */
 .overlay:target {
   display: block;
-
+    
 /* Contents of Overlay */
   display: flex;
   flex-direction: column;
