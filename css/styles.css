@@ -157,3 +157,9 @@ left:0;
     transform: scale(1);
   }
 }
+
+figcaption, h3{
+    font-family: papyrus;
+    color: aliceblue
+    
+}
